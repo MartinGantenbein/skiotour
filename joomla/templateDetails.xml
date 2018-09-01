@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="4.0" type="template" method="upgrade">
+   <name>sot</name>
+   <creationDate>2016-02-18</creationDate>
+   <author>Gante</author>
+   <copyright>Copyright © 2016 skiotour.com</copyright>
+   <authorEmail>webmaster@skiotour.com</authorEmail>
+   <authorUrl>http://www.skiotour.com</authorUrl>
+   <version>19.0.0</version>
+   <description><![CDATA[
+      <h1>SOT</h1>
+      <p><img src="../templates/templatename/template_preview.png" /></p>
+      <h2>Module positions</h2>
+      <ol>
+         <li>header</li>
+         <li>top</li>
+         <li>menu_top</li>
+         <li>left</li>
+         <li>main</li>
+         <li>right</li>
+         <li>footer</li>
+         <li>debug</li>
+      </ol>
+      <p>Created by <a href="http://www.skiotour.com" target="_blank">Gante | skiotour.com</a>.</p>
+   ]]></description>
+   
+   <files>
+      <folder>css</folder>
+      <!--folder>html</folder-->
+      <folder>images</folder>
+      <folder>js</folder>
+      <folder>icons</folder>
+      <filename>favicon.ico</filename>
+      <filename>index.php</filename>
+      <filename>templateDetails.xml</filename>
+   </files>
+   
+   <!-- languages folder="language">
+      <language tag="de-DE">de-DE.tpl_sot.ini</language>
+      <language tag="en-GB">en-GB.tpl_sot.ini</language>
+      <language tag="fr-FR">fr-FR.tpl_sot.ini</language>
+      <language tag="it-IT">it-IT.tpl_sot.ini</language>
+   </languages -->
+   
+   <positions>
+      <position>header</position>
+      <position>top</position>
+      <position>menu_top</position>
+      <position>left</position>
+      <position>main</position>
+      <position>right</position>
+      <position>footer</position>
+      <position>debug</position>
+   </positions>
+   
+	<config><!-- no need to change -->
+		<fields name="params">
+			<fieldset name="basic">
+			  <!-- MODERNIZR-->
+  			  <field name="modernizr" type="radio" default="1" label="TPL_TEMPLATENAME_PARAMETER_MODERNIZR_LABEL" description="TPL_TEMPLATENAME_PARAMETER_MODERNIZR_DESC">
+  					<option value="0">JNO</option>
+  					<option value="1">JYES</option>
+  				</field>
+  				<field name="TPL_TEMPLATENAME_PARAMETER_MODERNIZR_DOC" type="spacer" hr="false" />
+  				<field type="spacer" hr="true" />
+		    <!-- TWITTER BOOTSTRAP-->
+  		    <field name="bootstrap" type="radio" default="0" label="TPL_TEMPLATENAME_PARAMETER_BOOTSTRAP_LABEL" description="TPL_TEMPLATENAME_PARAMETER_BOOTSTRAP_DESC">
+  					<option value="0">JNO</option>
+  					<option value="1">JYES</option>
+  				</field>
+  				<field name="TPL_TEMPLATENAME_PARAMETER_BOOTSTRAP_DOC" type="spacer" hr="false" />
+  				<field type="spacer" hr="true" />
+				<!-- PIE-->
+  				<field name="pie" type="radio" default="1" label="TPL_TEMPLATENAME_PARAMETER_PIE_LABEL" description="TPL_TEMPLATENAME_PARAMETER_PIE_DESC">
+  					<option value="0">JNO</option>
+  					<option value="1">JYES</option>
+  				</field>
+  				<field name="TPL_TEMPLATENAME_PARAMETER_PIE_DOC" type="spacer" hr="false" />
+			</fieldset>
+         <fieldset name="advanced">
+            <field name="layout" type="list" default="all" label="Layout" description="" filter="word">
+               <option value="all">Default style (left sidebar, main, right sidebar)</option>
+               <option value="withoutright">Without right sidebar (left sidebar, main)</option>
+            </field>
+         </fieldset>
+		</fields>
+	</config>
+</extension>
